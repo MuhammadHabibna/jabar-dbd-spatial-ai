@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  --sidebar-bg: #0f172a;
+  --sidebar-border: #1e293b;
+  --card-bg: #ffffff;
+  --card-border: #e2e8f0;
+  --merah: #e74c3c;
+  --kuning: #f39c12;
+  --hijau: #27ae60;
+  --accent: #3b82f6;
+}
+
+.dark {
+  --background: #0a0f1e;
+  --foreground: #f1f5f9;
+  --sidebar-bg: #060d1a;
+  --sidebar-border: #1e293b;
+  --card-bg: #0f172a;
+  --card-border: #1e293b;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #475569; }
+
+/* Smooth transitions */
+* { transition-property: color, background-color, border-color; transition-duration: 150ms; }
+
+/* Zona badge */
+.badge-merah  { background: #fef2f2; color: #991b1b; border: 1px solid #fecaca; }
+.badge-kuning { background: #fffbeb; color: #92400e; border: 1px solid #fde68a; }
+.badge-hijau  { background: #f0fdf4; color: #166534; border: 1px solid #bbf7d0; }
+.dark .badge-merah  { background: #450a0a; color: #fca5a5; border-color: #7f1d1d; }
+.dark .badge-kuning { background: #451a03; color: #fcd34d; border-color: #78350f; }
+.dark .badge-hijau  { background: #052e16; color: #86efac; border-color: #166534; }
+
+/* Glowing metric cards */
+.card-glow-red    { box-shadow: 0 0 20px rgba(231,76,60,0.12); }
+.card-glow-yellow { box-shadow: 0 0 20px rgba(243,156,18,0.12); }
+.card-glow-green  { box-shadow: 0 0 20px rgba(39,174,96,0.12); }
+.card-glow-blue   { box-shadow: 0 0 20px rgba(59,130,246,0.12); }
+
+/* Pulse animation for critical alerts */
+@keyframes pulse-red { 0%,100%{opacity:1} 50%{opacity:0.6} }
+.pulse-red { animation: pulse-red 2s ease-in-out infinite; }
+
+/* Recharts custom tooltip */
+.recharts-tooltip-wrapper .recharts-default-tooltip {
+  border-radius: 8px !important;
+  border: 1px solid #334155 !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3) !important;
+}
