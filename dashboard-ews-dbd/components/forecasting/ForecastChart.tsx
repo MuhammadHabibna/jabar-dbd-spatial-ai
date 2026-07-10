@@ -57,7 +57,7 @@ export default function ForecastChart() {
             label={{ value: "IR DBD per 100.000", angle: -90, position: "insideLeft", offset: 15, fontSize: 11, fill: "#64748b" }} />
           <Tooltip content={<CustomTooltip />} />
           <Legend wrapperStyle={{ fontSize: 11, paddingTop: 16 }}
-            formatter={(v) => ({ merah:"Zona Merah", kuning:"Zona Kuning", hijau:"Zona Hijau", merah_hi:"", merah_lo:"", kuning_hi:"", kuning_lo:"", hijau_hi:"", hijau_lo:"" }[v] ?? "")}/>
+            formatter={(v: string) => ({ merah:"Zona Merah", kuning:"Zona Kuning", hijau:"Zona Hijau", merah_hi:"", merah_lo:"", kuning_hi:"", kuning_lo:"", hijau_hi:"", hijau_lo:"" } as Record<string, string>)[v] ?? ""}/>
 
           {/* CI areas */}
           <Area dataKey="merah_hi"  fill="#E74C3C" fillOpacity={0.06} stroke="none" legendType="none" />
