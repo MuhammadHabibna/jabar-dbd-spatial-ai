@@ -104,8 +104,8 @@ export default function MapPlaceholder() {
           <ZoomableGroup zoom={1} minZoom={0.8} maxZoom={6}>
             {/* ── District polygons ── */}
             <Geographies geography={GEO_URL}>
-              {({ geographies }) =>
-                geographies.map((geo, geoIndex) => {
+              {({ geographies }: { geographies: any[] }) =>
+                geographies.map((geo: any, geoIndex: number) => {
                   const { raw, mapped } = resolveNama(geo.properties ?? {}, geoIndex);
                   const zona  = zonaLookup[mapped] ?? "";
                   const ir    = irLookup[mapped]   ?? 0;
