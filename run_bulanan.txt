@@ -1,0 +1,177 @@
+﻿=================================================================
+  NASA POWER ù Data BULANAN Nyata 2021-2025
+  27 kab/kota x 5 tahun = 135 API calls (masing-masing 12 bln)
+=================================================================
+  Bogor 2021... OK (12/12 bulan)
+  Bogor 2022... OK (12/12 bulan)
+  Bogor 2023... OK (12/12 bulan)
+  Bogor 2024... OK (12/12 bulan)
+  Bogor 2025... OK (12/12 bulan)
+  Sukabumi 2021... OK (12/12 bulan)
+  Sukabumi 2022... OK (12/12 bulan)
+  Sukabumi 2023... OK (12/12 bulan)
+  Sukabumi 2024... OK (12/12 bulan)
+  Sukabumi 2025... OK (12/12 bulan)
+  Cianjur 2021... OK (12/12 bulan)
+  Cianjur 2022... OK (12/12 bulan)
+  Cianjur 2023... OK (12/12 bulan)
+  Cianjur 2024... OK (12/12 bulan)
+  Cianjur 2025... OK (12/12 bulan)
+  Bandung 2021... OK (12/12 bulan)
+  Bandung 2022... OK (12/12 bulan)
+  Bandung 2023... OK (12/12 bulan)
+  Bandung 2024... OK (12/12 bulan)
+  Bandung 2025... OK (12/12 bulan)
+  Garut 2021... OK (12/12 bulan)
+  Garut 2022... OK (12/12 bulan)
+  Garut 2023... OK (12/12 bulan)
+  Garut 2024... OK (12/12 bulan)
+  Garut 2025... OK (12/12 bulan)
+  Tasikmalaya 2021... OK (12/12 bulan)
+  Tasikmalaya 2022... OK (12/12 bulan)
+  Tasikmalaya 2023... OK (12/12 bulan)
+  Tasikmalaya 2024... OK (12/12 bulan)
+  Tasikmalaya 2025... OK (12/12 bulan)
+  Ciamis 2021... OK (12/12 bulan)
+  Ciamis 2022... OK (12/12 bulan)
+  Ciamis 2023... OK (12/12 bulan)
+  Ciamis 2024... OK (12/12 bulan)
+  Ciamis 2025... OK (12/12 bulan)
+  Kuningan 2021... OK (12/12 bulan)
+  Kuningan 2022... OK (12/12 bulan)
+  Kuningan 2023... OK (12/12 bulan)
+  Kuningan 2024... OK (12/12 bulan)
+  Kuningan 2025... OK (12/12 bulan)
+  Cirebon 2021... OK (12/12 bulan)
+  Cirebon 2022... OK (12/12 bulan)
+  Cirebon 2023... OK (12/12 bulan)
+  Cirebon 2024... OK (12/12 bulan)
+  Cirebon 2025... OK (12/12 bulan)
+  Majalengka 2021... OK (12/12 bulan)
+  Majalengka 2022... OK (12/12 bulan)
+  Majalengka 2023... OK (12/12 bulan)
+  Majalengka 2024... OK (12/12 bulan)
+  Majalengka 2025... OK (12/12 bulan)
+  Sumedang 2021... OK (12/12 bulan)
+  Sumedang 2022... OK (12/12 bulan)
+  Sumedang 2023... OK (12/12 bulan)
+  Sumedang 2024... OK (12/12 bulan)
+  Sumedang 2025... OK (12/12 bulan)
+  Indramayu 2021... OK (12/12 bulan)
+  Indramayu 2022... OK (12/12 bulan)
+  Indramayu 2023... OK (12/12 bulan)
+  Indramayu 2024... OK (12/12 bulan)
+  Indramayu 2025... OK (12/12 bulan)
+  Subang 2021... OK (12/12 bulan)
+  Subang 2022... OK (12/12 bulan)
+  Subang 2023... OK (12/12 bulan)
+  Subang 2024... OK (12/12 bulan)
+  Subang 2025... OK (12/12 bulan)
+  Purwakarta 2021... OK (12/12 bulan)
+  Purwakarta 2022... OK (12/12 bulan)
+  Purwakarta 2023... OK (12/12 bulan)
+  Purwakarta 2024... OK (12/12 bulan)
+  Purwakarta 2025... OK (12/12 bulan)
+  Karawang 2021... OK (12/12 bulan)
+  Karawang 2022... OK (12/12 bulan)
+  Karawang 2023... OK (12/12 bulan)
+  Karawang 2024... OK (12/12 bulan)
+  Karawang 2025... OK (12/12 bulan)
+  Bekasi 2021... OK (12/12 bulan)
+  Bekasi 2022... OK (12/12 bulan)
+  Bekasi 2023... OK (12/12 bulan)
+  Bekasi 2024... OK (12/12 bulan)
+  Bekasi 2025... OK (12/12 bulan)
+  Bandung Barat 2021... OK (12/12 bulan)
+  Bandung Barat 2022... OK (12/12 bulan)
+  Bandung Barat 2023... OK (12/12 bulan)
+  Bandung Barat 2024... OK (12/12 bulan)
+  Bandung Barat 2025... OK (12/12 bulan)
+  Pangandaran 2021... OK (12/12 bulan)
+  Pangandaran 2022... OK (12/12 bulan)
+  Pangandaran 2023... OK (12/12 bulan)
+  Pangandaran 2024... OK (12/12 bulan)
+  Pangandaran 2025... OK (12/12 bulan)
+  Kota Bogor 2021... OK (12/12 bulan)
+  Kota Bogor 2022... OK (12/12 bulan)
+  Kota Bogor 2023... OK (12/12 bulan)
+  Kota Bogor 2024... OK (12/12 bulan)
+  Kota Bogor 2025... OK (12/12 bulan)
+  Kota Sukabumi 2021... OK (12/12 bulan)
+  Kota Sukabumi 2022... OK (12/12 bulan)
+  Kota Sukabumi 2023... OK (12/12 bulan)
+  Kota Sukabumi 2024... OK (12/12 bulan)
+  Kota Sukabumi 2025... OK (12/12 bulan)
+  Kota Bandung 2021... OK (12/12 bulan)
+  Kota Bandung 2022... OK (12/12 bulan)
+  Kota Bandung 2023... OK (12/12 bulan)
+  Kota Bandung 2024... OK (12/12 bulan)
+  Kota Bandung 2025... OK (12/12 bulan)
+  Kota Cirebon 2021... OK (12/12 bulan)
+  Kota Cirebon 2022... OK (12/12 bulan)
+  Kota Cirebon 2023... OK (12/12 bulan)
+  Kota Cirebon 2024... OK (12/12 bulan)
+  Kota Cirebon 2025... OK (12/12 bulan)
+  Kota Bekasi 2021... OK (12/12 bulan)
+  Kota Bekasi 2022... OK (12/12 bulan)
+  Kota Bekasi 2023... OK (12/12 bulan)
+  Kota Bekasi 2024... OK (12/12 bulan)
+  Kota Bekasi 2025... OK (12/12 bulan)
+  Kota Depok 2021... OK (12/12 bulan)
+  Kota Depok 2022... OK (12/12 bulan)
+  Kota Depok 2023... OK (12/12 bulan)
+  Kota Depok 2024... OK (12/12 bulan)
+  Kota Depok 2025... OK (12/12 bulan)
+  Kota Cimahi 2021... OK (12/12 bulan)
+  Kota Cimahi 2022... OK (12/12 bulan)
+  Kota Cimahi 2023... OK (12/12 bulan)
+  Kota Cimahi 2024... OK (12/12 bulan)
+  Kota Cimahi 2025... OK (12/12 bulan)
+  Kota Tasikmalaya 2021... OK (12/12 bulan)
+  Kota Tasikmalaya 2022... OK (12/12 bulan)
+  Kota Tasikmalaya 2023... OK (12/12 bulan)
+  Kota Tasikmalaya 2024... OK (12/12 bulan)
+  Kota Tasikmalaya 2025... OK (12/12 bulan)
+  Kota Banjar 2021... OK (12/12 bulan)
+  Kota Banjar 2022... OK (12/12 bulan)
+  Kota Banjar 2023... OK (12/12 bulan)
+  Kota Banjar 2024... OK (12/12 bulan)
+  Kota Banjar 2025... OK (12/12 bulan)
+
+[OK] Tersimpan: d:\Draft Perlombaan UNESA\ESSAI - UMEDS\data_iklim_bulanan_nasapower_2021_2025.csv
+     Total baris : 1,620  (target: 1.620)
+     Data valid  : 1,620  (100.0%)
+
+Contoh data Kota Bandung 2021-2022:
+Periode  Curah_Hujan_mm  Suhu_C
+2021-01           343.5   21.03
+2021-02           454.7   21.05
+2021-03           607.9   21.45
+2021-04           213.9   21.44
+2021-05           204.0   22.11
+2021-06           258.3   21.58
+2021-07            75.3   20.67
+2021-08           114.1   21.21
+2021-09           168.6   21.57
+2021-10           294.5   22.29
+2021-11           453.0   21.77
+2021-12           372.6   21.72
+2022-01           217.6   21.42
+2022-02           247.2   21.20
+2022-03           306.0   21.67
+2022-04           362.7   22.01
+2022-05           250.5   22.02
+2022-06           212.1   21.24
+2022-07           200.3   21.17
+2022-08           138.3   21.36
+2022-09           300.9   21.66
+2022-10           425.6   21.64
+2022-11           413.4   21.42
+2022-12           344.4   21.39
+
+Rata-rata CH Tahunan (seluruh Jawa Barat):
+  2021 (La Nina)    :   264.8 mm/bln  ##
+  2022 (La Nina)    :   264.0 mm/bln  ##
+  2023 (El Nino)    :   167.7 mm/bln  #
+  2024 (Pemulihan)  :   261.8 mm/bln  ##
+  2025 (Normal)     :   274.2 mm/bln  ##

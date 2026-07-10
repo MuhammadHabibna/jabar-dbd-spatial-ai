@@ -1,0 +1,128 @@
+﻿Pipeline direkonstruksi.
+  Total baris  : 1,566
+  Train / Test : 1,242 / 324
+Klaster direkonstruksi:
+  Zona Merah (Rawan): 2 wilayah
+  Zona Kuning (Waspada): 18 wilayah
+  Zona Hijau (Aman): 7 wilayah
+
+PROFIL TIAP ZONA (Desember 2025)
+===========================================================================
+
+  [Zona Merah (Rawan)]  (2 wilayah)
+    IR DBD Aktual                      :   290.08  (range 281.8 ÔÇô 298.3)
+    Prediksi IR Bulan Depan            :   291.21  (range 276.2 ÔÇô 306.2)
+    Kepadatan (jiwa/km2)               : 15128.05  (range 14860.3 ÔÇô 15395.8)
+    Sanitasi Layak (%)                 :    69.44  (range 55.0 ÔÇô 83.9)
+    Curah Hujan (mm)                   :  4383.25  (range 4321.3 ÔÇô 4445.2)
+    CH Lag-1 bln (mm)                  :  4623.05  (range 4519.3 ÔÇô 4726.8)
+    Suhu Udara (C)                     :    21.21  (range 21.1 ÔÇô 21.3)
+
+  [Zona Kuning (Waspada)]  (18 wilayah)
+    IR DBD Aktual                      :   226.86  (range 181.1 ÔÇô 260.4)
+    Prediksi IR Bulan Depan            :   225.00  (range 182.4 ÔÇô 271.8)
+    Kepadatan (jiwa/km2)               :  3453.45  (range 417.8 ÔÇô 12881.0)
+    Sanitasi Layak (%)                 :    72.93  (range 42.8 ÔÇô 99.5)
+    Curah Hujan (mm)                   :  3816.71  (range 3262.8 ÔÇô 4611.1)
+    CH Lag-1 bln (mm)                  :  4248.25  (range 3784.1 ÔÇô 5055.1)
+    Suhu Udara (C)                     :    24.33  (range 20.9 ÔÇô 27.5)
+
+  [Zona Hijau (Aman)]  (7 wilayah)
+    IR DBD Aktual                      :   196.09  (range 182.1 ÔÇô 223.5)
+    Prediksi IR Bulan Depan            :   195.13  (range 181.7 ÔÇô 240.1)
+    Kepadatan (jiwa/km2)               :  2341.53  (range 784.0 ÔÇô 9360.8)
+    Sanitasi Layak (%)                 :    90.78  (range 85.6 ÔÇô 96.9)
+    Curah Hujan (mm)                   :  3306.09  (range 3107.3 ÔÇô 3564.0)
+    CH Lag-1 bln (mm)                  :  3679.54  (range 3516.5 ÔÇô 3942.3)
+    Suhu Udara (C)                     :    24.94  (range 22.6 ÔÇô 27.5)
+Gambar 8 tersimpan: 08_profil_klaster.png
+Proyeksi 6 bulan selesai.
+  Total baris proyeksi : 162  (27 kab/kota x 6 bulan)
+
+Ringkasan Proyeksi per Zona:
+Periode                2026-01  2026-02  2026-03  2026-04  2026-05  2026-06
+Zona_Des2025                                                               
+Zona Hijau (Aman)       178.92   157.06   144.68   139.99   144.71   158.77
+Zona Kuning (Waspada)   202.51   180.46   164.65   158.67   164.58   179.01
+Zona Merah (Rawan)      265.09   252.82   223.04   207.76   218.04   231.33
+Gambar 9 tersimpan: 09_proyeksi_6bulan.png
+Gambar 10 tersimpan: 10_distribusi_karakteristik.png
+CSV klaster tersimpan  : output_EWS_DBD/klaster_DBD_Des2025.csv  (27 baris)
+CSV proyeksi tersimpan : output_EWS_DBD/proyeksi_IR_DBD_Jan_Jun_2026.csv  (162 baris)
+CSV ringkasan tersimpan: output_EWS_DBD/ringkasan_zona_klaster.csv  (3 baris)
+======================================================================
+  KARAKTERISTIK TIAP ZONA ÔÇö NARASI ANALITIK
+======================================================================
+
+  ZONA MERAH (Rawan Wabah) ÔÇö Prioritas TINGGI
+  Karakteristik utama:
+  - IR DBD tertinggi (>280 per 100.000), jauh di atas rata-rata Jawa Barat
+  - Kepadatan penduduk sangat padat (>14.000 jiwa/km2): kontak manusia-nyamuk
+    sangat tinggi, mempercepat transmisi
+  - Sanitasi cukup rendah (<60%): genangan air sulit dikelola
+  - Curah hujan lag-1 bulan sangat tinggi (>4.500 mm): breeding site nyamuk
+    berlimpah, efek time-lag sudah termanifestasi sebagai kasus DBD
+  - Suhu optimal nyamuk (21-22C di wilayah dataran tinggi Bandung Raya):
+    siklus hidup nyamuk aktif sepanjang tahun
+  Wilayah: Kota Bandung, Kota Cimahi
+  Tindakan: Kerahkan Jumantik SEGERA, larvisidasi masif, PSN darurat
+
+  ZONA KUNING (Waspada) ÔÇö Prioritas SEDANG
+  Karakteristik utama:
+  - IR DBD menengah-tinggi (150-270 per 100.000): sudah meresahkan
+    tapi belum mencapai ambang wabah
+  - Campuran wilayah: kota besar (kepadatan tinggi) + kabupaten
+  - Sanitasi bervariasi luas (42-99%): ada kab. yang rentan akibat
+    sanitasi buruk, ada kota yang rentan akibat kepadatan
+  - Kelompok risiko terbagi: (a) Kota dengan sanitasi tinggi tapi
+    padat; (b) Kab. dengan sanitasi rendah dan kondisi klimatologis basah
+  Wilayah: 18 kab/kota (Kota Tasikmalaya, Kota Sukabumi, Kota Bekasi,
+            Kota Bogor, Kota Depok, Bandung, dll.)
+  Tindakan: Monitoring mingguan, siagakan logistik, edukasi preventif
+
+  ZONA HIJAU (Aman Relatif) ÔÇö Prioritas RENDAH
+  Karakteristik utama:
+  - IR DBD relatif rendah (<160 per 100.000)
+  - Dominasi kabupaten pesisir utara (Pantura): Indramayu, Cirebon,
+    Kuningan, Majalengka ÔÇö curah hujan lebih rendah (iklim kering)
+  - Sanitasi cukup baik (>80%): kondisi higienitas lebih terkontrol
+  - Kepadatan lebih rendah: kontak manusia-nyamuk lebih jarang
+  - PERHATIAN: Jangan lengah ÔÇö El Nino dapat menurunkan zona ini ke
+    'aman semu' padahal stok nyamuk bisa meledak saat curah hujan kembali
+  Wilayah: Kota Cirebon, Subang, Indramayu, Sumedang, Cirebon,
+            Kuningan, Majalengka
+  Tindakan: Surveilans rutin bulanan, edukasi PHBS standar
+
+======================================================================
+  PROYEKSI JAN-JUN 2026 ÔÇö RINGKASAN
+======================================================================
+
+  Zona Merah (Rawan):
+    Jan 2026 : 265.1  |  Jun 2026 : 231.3  [TURUN]
+    2026-01:  265.1  #################
+    2026-02:  252.8  ################
+    2026-03:  223.0  ##############
+    2026-04:  207.8  #############
+    2026-05:  218.0  ##############
+    2026-06:  231.3  ###############
+
+  Zona Kuning (Waspada):
+    Jan 2026 : 202.5  |  Jun 2026 : 179.0  [TURUN]
+    2026-01:  202.5  #############
+    2026-02:  180.5  ############
+    2026-03:  164.6  ##########
+    2026-04:  158.7  ##########
+    2026-05:  164.6  ##########
+    2026-06:  179.0  ###########
+
+  Zona Hijau (Aman):
+    Jan 2026 : 178.9  |  Jun 2026 : 158.8  [TURUN]
+    2026-01:  178.9  ###########
+    2026-02:  157.1  ##########
+    2026-03:  144.7  #########
+    2026-04:  140.0  #########
+    2026-05:  144.7  #########
+    2026-06:  158.8  ##########
+
+  CATATAN: Puncak proyeksi diprediksi pada Feb-Mar 2026 (musim hujan)
+  sesuai dengan time-lag 1-2 bulan dari puncak curah hujan Januari.

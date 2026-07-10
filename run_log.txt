@@ -1,0 +1,156 @@
+﻿ Setup selesai. Library berhasil diimpor.
+   Output visualisasi  : ./output_EWS_DBD/
+Jumlah Kab/Kota : 27
+Rentang waktu   : Jan 2021 ÔÇô Dec 2025 (60 bulan)
+
+Total baris      : 1,620  (27  60 = 1.620 )
+
+Statistik IR_DBD :
+count    1620.000000
+mean      198.778321
+std        45.951554
+min        91.440000
+25%       163.355000
+50%       194.625000
+75%       228.737500
+max       348.800000
+
+Preview 5 baris pertama:
+     Tanggal  Tahun  Bulan  ... Curah_Hujan_mm  Suhu_C  IR_DBD
+0 2021-01-01   2021      1  ...         3509.6   24.46  197.85
+1 2021-02-01   2021      2  ...         2818.2   24.43  193.29
+2 2021-03-01   2021      3  ...         2347.9   24.66  158.32
+3 2021-04-01   2021      4  ...         2271.5   23.93  157.73
+4 2021-05-01   2021      5  ...         2282.7   24.59  155.94
+
+[5 rows x 11 columns]
+ Feature engineering selesai.
+   Total baris setelah drop NaN : 1,566
+
+   Kolom baru yang ditambahkan:
+    Curah_Hujan_mm_Lag1
+    Curah_Hujan_mm_Lag2
+    Curah_Hujan_mm_Roll3
+    Suhu_C_Lag1
+    Suhu_C_Lag2
+    Suhu_C_Roll3
+    IR_DBD_Lag1
+ Gambar 1 tersimpan: 01_timeseries_IR_DBD.png
+ Gambar 2 tersimpan: 02_correlation_heatmap.png
+ Gambar 3 tersimpan: 03_seasonal_pattern.png
+Train set : 1,242 baris  (Mar 2021 ÔÇô Dec 2024)
+Test set  : 324  baris  (Jan 2025 ÔÇô Dec 2025)
+
+ Evaluasi Model XGBoost pada Test Set 2025
+   RMSE  : 11.20
+   MAE   : 8.45
+   R┬▓    : 0.9317
+ Gambar 4 tersimpan: 04_xgboost_evaluation.png
+ Gambar 5 tersimpan: 05_actual_vs_predicted_cities.png
+Data spasial untuk: December 2025
+Jumlah wilayah    : 27
+ Spatial Weights Matrix: (27, 27) (Custom KNN-4, scipy)
+   Non-zero connections   : 120
+
+Ringkasan Klaster:
+             N_Wilayah  IR_DBD_Mean  CH_Mean  Kepadatan  Sanitasi
+Zona                                                             
+Zona Merah           2       290.08  4623.05   15128.05     69.44
+Zona Kuning         18       226.86  4248.25    3453.45     72.93
+Zona Hijau           7       196.09  3679.54    2341.53     90.78
+ Gambar 6 tersimpan: 06_spatial_clustering.png
+ Gambar 7 tersimpan: 07_zona_merah_ranking.png
+ Visualisasi tersimpan (7 file, 300 DPI):
+    01_timeseries_IR_DBD.png  (551 KB)
+    02_correlation_heatmap.png  (449 KB)
+    03_seasonal_pattern.png  (256 KB)
+    04_xgboost_evaluation.png  (381 KB)
+    05_actual_vs_predicted_cities.png  (616 KB)
+    06_spatial_clustering.png  (600 KB)
+    07_zona_merah_ranking.png  (104 KB)
+
+ JSON API tersimpan: output_EWS_DBD\ews_dbd_cluster_latest.json
+   Total wilayah  : 27
+   Zona Merah     : 2 wilayah
+   Zona Kuning    : 18 wilayah
+   Zona Hijau     : 7 wilayah
+
+ Contoh JSON entry (Zona Merah #1):
+{
+    "kab_kota": "Kota Bandung",
+    "lat": -6.914,
+    "lon": 107.609,
+    "zona": 0,
+    "zona_label": "Zona Merah (Rawan)",
+    "zona_color": "#E74C3C",
+    "ir_dbd_aktual": 298.34,
+    "ir_dbd_prediksi": 306.2,
+    "kepadatan": 15396.0,
+    "sanitasi_pct": 55.0,
+    "curah_hujan_lag1": 4726.8,
+    "suhu_lag1": 21.7,
+    "periode": "2025-12",
+    "prioritas_intervensi": "TINGGI"
+}
+======================================================================
+  RINGKASAN PIPELINE EWS-PHBS DBD JAWA BARAT
+======================================================================
+
+   Data     : 1.620 obs (27 kab/kota  60 bulan, Jan 2021Des 2025)
+    Features : 11 fitur + 6 time-lag/rolling window
+
+   XGBoost Regressor (Test 2025):
+      RMSE : 11.20
+      MAE  : 8.45
+      R   : 0.9317
+
+    Spatial Clustering (Des 2025):
+     Zona Merah (Rawan)       : 2 wilayah
+           Kota Bandung
+           Kota Cimahi
+     Zona Kuning (Waspada)    : 18 wilayah
+           Kota Tasikmalaya
+           Kota Sukabumi
+           Kota Bekasi
+           Kota Bogor
+           Kota Depok
+           Ciamis
+           Tasikmalaya
+           Bandung
+           Bandung Barat
+           Bekasi
+           Sukabumi
+           Cianjur
+           Purwakarta
+           Karawang
+           Garut
+           Kota Banjar
+           Bogor
+           Pangandaran
+     Zona Hijau (Aman)        : 7 wilayah
+           Kota Cirebon
+           Subang
+           Indramayu
+           Sumedang
+           Cirebon
+           Kuningan
+           Majalengka
+
+   Output:
+      7 visualisasi PNG 300 DPI  ./output_EWS_DBD/
+      JSON API  ./output_EWS_DBD/ews_dbd_cluster_latest.json
+
+======================================================================
+   IMPLIKASI KEBIJAKAN
+======================================================================
+
+  Sistem ini memungkinkan Dinas Kesehatan Jawa Barat untuk:
+   Deteksi 6 minggu lebih awal sebelum wabah meledak
+   Alokasi Jumantik hanya ke Zona Merah (efisiensi anggaran)
+   Intervensi PHBS 3M Plus yang terukur dan berbasis data
+   Monitoring real-time via dashboard API-ready
+
+    Catatan Etika Algoritmik:
+  Model ini perlu diaudit untuk 'blank spot' wilayah pelosok
+  yang underreporting, agar tidak terjadi keadilan algoritmik.
+======================================================================

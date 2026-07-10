@@ -1,0 +1,4 @@
+﻿Zona_ID,Zona_Label,Jumlah_Wilayah,Wilayah,IR_DBD_Mean,IR_DBD_Min,IR_DBD_Max,IR_Prediksi_Mean,Kepadatan_Mean,Sanitasi_Mean_Pct,CH_Mean_mm,CH_Lag1_Mean_mm,Suhu_Mean_C,Prioritas_Intervensi,Rekomendasi
+0,Zona Merah (Rawan),2,"Kota Bandung, Kota Cimahi",290.08,281.83,298.34,291.21,15128.0,69.44,4383.2,4623.0,21.21,TINGGI,Kerahkan Jumantik masif + larvisidasi darurat + edukasi PHBS 3M Plus intensif
+1,Zona Kuning (Waspada),18,"Bandung, Bandung Barat, Bekasi, Bogor, Ciamis, Cianjur, Garut, Karawang, Kota Banjar, Kota Bekasi, Kota Bogor, Kota Depok, Kota Sukabumi, Kota Tasikmalaya, Pangandaran, Purwakarta, Sukabumi, Tasikmalaya",226.86,181.06,260.39,225.0,3453.0,72.93,3816.7,4248.2,24.33,SEDANG,Monitoring aktif mingguan + siagakan stok logistik + edukasi preventif
+2,Zona Hijau (Aman),7,"Cirebon, Indramayu, Kota Cirebon, Kuningan, Majalengka, Subang, Sumedang",196.09,182.14,223.49,195.13,2342.0,90.78,3306.1,3679.5,24.94,RENDAH,Surveilans rutin bulanan + edukasi PHBS standar

@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+env/
+
+# Next.js
+dashboard-ews-dbd/node_modules/
+dashboard-ews-dbd/.next/
+dashboard-ews-dbd/out/
+dashboard-ews-dbd/build/
+dashboard-ews-dbd/.env.local
+dashboard-ews-dbd/.env.development.local
+dashboard-ews-dbd/.env.test.local
+dashboard-ews-dbd/.env.production.local
+
+# OS
+.DS_Store
+Thumbs.db
